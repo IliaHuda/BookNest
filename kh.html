@@ -1,0 +1,212 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>King Haidar</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            margin: 0; 
+            padding: 0; 
+        } 
+        header { 
+            background-color: #2c3e50; 
+            color: white; 
+            text-align: center; 
+            padding: 10px 0; 
+        } 
+        .container { 
+            max-width: 1000px; 
+            margin: 20px auto; 
+            background-color: white; 
+            padding: 20px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        } 
+ 
+        .book-info { 
+            display: flex; 
+            align-items: center; 
+        } 
+        .book-info img { 
+            width: 150px; 
+            height: 200px; 
+            margin-right: 20px; 
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+        } 
+        .book-info h1 { 
+            margin: 0; 
+        } 
+        .book-details p { 
+            font-size: 1em; 
+            color: #555; 
+            margin-top: 5px; 
+        } 
+        .rating { 
+            color: gold; 
+            font-size: 1.5em; 
+        } 
+        .button { 
+            background-color: #27ae60; 
+            color: white; 
+            text-decoration: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            display: inline-block; 
+            margin-top: 20px; 
+        } 
+        .button:hover { 
+            background-color: #219150; 
+        } 
+ 
+        .synopsis { 
+            margin-top: 20px; 
+            font-size: 1.1em; 
+            line-height: 1.5; 
+            background-color: #f9f9f9; 
+            padding: 20px; 
+            border-radius: 5px; 
+            text-align: justify; 
+        } 
+ 
+        .slideshow-container { 
+            position: relative; 
+            background: #f1f1f1; 
+        } 
+        .mySlides { 
+            display: none; 
+            padding: 80px; 
+            text-align: center; 
+        } 
+        .prev, .next { 
+            cursor: pointer; 
+            position: absolute; 
+            top: 50%; 
+            width: auto; 
+            margin-top: -30px; 
+            padding: 16px; 
+            color: #888; 
+            font-weight: bold; 
+            font-size: 20px; 
+            border-radius: 0 3px 3px 0; 
+            user-select: none; 
+        } 
+        .next { 
+            right: 0; 
+            border-radius: 3px 0 0 3px; 
+        } 
+        .prev:hover, .next:hover { 
+            background-color: rgba(0, 0, 0, 0.8); 
+            color: white; 
+        } 
+        .dot-container { 
+            text-align: center; 
+            padding: 20px; 
+            background: #ddd; 
+        } 
+        .dot { 
+            cursor: pointer; 
+            height: 15px; 
+            width: 15px; 
+            margin: 0 2px; 
+            background-color: #bbb; 
+            border-radius: 50%; 
+            display: inline-block; 
+            transition: background-color 0.6s ease; 
+        } 
+        .active, .dot:hover { 
+            background-color: #717171; 
+        } 
+ 
+        q { 
+            font-style: italic; 
+        } 
+        .author { 
+            color: cornflowerblue; 
+        } 
+    </style> 
+ 
+</head> 
+<body> 
+    <header> 
+        <h1>Book Review - King Haidar</h1> 
+    </header> 
+ 
+    <div class="container"> 
+        <div class="book-info"> 
+            <img src="king.jpeg"> 
+            <div> 
+                <h1>King Haidar</h1> 
+                <p>By Anjell</p> 
+                <p>ISBN: 978-967-469-191-2</p> 
+                <p>Language: Malay</p> 
+                <p>Publisher: Karya Seni</p> 
+                <p>📄823 pages</p> 
+                <p class="rating">★★★★☆</p> 
+                <a href="https://www.smobookstores.com/products/-karya-seni-king-haidar-by-anjell" class="button">Shop Now</a> 
+            </div> 
+        </div> 
+ 
+        <div class="synopsis"> 
+            <h3>Synopsis:</h3> 
+<p>Their love seemed to have ended, and Suria Andreana was ready to move on. But when fate brought Raja Haidar back into her life, everything turned complicated. What seemed like a second chance was really the beginning of uncovering deep, hidden truths. Haidar, known as King, wasn’t just the charming gentleman with a smile that could melt anyone's heart. He carried a darker side that intrigued Suria even more.</p>
+
+<p>As secrets from both their pasts came to light, Suria found herself caught in a dangerous game. With the mysterious Ghost X targeting her, Haidar offered a deal. Marry him, and he would reveal the truth about himself. What started as an offer of safety quickly spiraled into a series of shocking revelations, betrayals, and threats. Suria must decide if she can truly trust Haidar, as the stakes become higher with each passing moment.</p> 
+        </div> 
+ 
+        <div class="slideshow-container"> 
+            <div class="mySlides"> 
+                <q>Do you trust me, little sun?</q> 
+                <p class="author">- Raja Haidar -</p> 
+            </div> 
+ 
+            <div class="mySlides"> 
+                <q>You intriguied me. And I was attracted to you, like ferum to magnet</q> 
+                <p class="author">- Suria Andreana -</p> 
+            </div> 
+ 
+            <div class="mySlides"> 
+                <q>We met again.</q> 
+                <p class="author">- Eshan -</p> 
+            </div> 
+ 
+            <a class="prev" onclick="plusSlides(-1)">❮</a> 
+            <a class="next" onclick="plusSlides(1)">❯</a> 
+        </div> 
+ 
+        <div class="dot-container"> 
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div> 
+    </div> 
+ 
+    <script> 
+        let slideIndex = 1; 
+        showSlides(slideIndex); 
+ 
+        function plusSlides(n) { 
+            showSlides(slideIndex += n); 
+        } 
+ 
+        function currentSlide(n) { 
+            showSlides(slideIndex = n); 
+        } 
+ 
+        function showSlides(n) { 
+            const slides = document.getElementsByClassName("mySlides"); 
+            const dots = document.getElementsByClassName("dot"); 
+            if (n > slides.length) slideIndex = 1; 
+            if (n < 1) slideIndex = slides.length; 
+            for (let i = 0; i < slides.length; i++) { 
+                slides[i].style.display = "none"; 
+            } 
+            for (let i = 0; i < dots.length; i++) { 
+                dots[i].className = dots[i].className.replace(" active", ""); 
+            } 
+            slides[slideIndex - 1].style.display = "block"; 
+            dots[slideIndex - 1].className += " active"; 
+        } 
+    </script> 
+</body> 
+</html>
